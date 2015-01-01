@@ -118,3 +118,5 @@ sim_e <- function(nsamp, rng = c(-0.5, 0.5))
 }
 
 plot(sim_e(100))
+
+# TODO: overlapping clusters
