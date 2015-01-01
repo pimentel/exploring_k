@@ -119,4 +119,12 @@ sim_e <- function(nsamp, rng = c(-0.5, 0.5))
 
 plot(sim_e(100))
 
-# TODO: overlapping clusters
+overlap_clust <- function(delta, nsamp)
+{
+    clust_1 <- matrix(rnorm(nsamp[1] * 2), ncol = 2)
+    clust_2 <- matrix(rnorm(nsamp[2] * 2), ncol = 2)
+    clust_2[,1] <- clust_2[,1] + delta
+    rbind(clust_1, clust_2)
+}
+
+plot(overlap_clust(5, c(50, 50)))
