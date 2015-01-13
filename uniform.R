@@ -5,7 +5,7 @@ library(kselection)
 library(multicore)
 
 # XXX: remember to set the number of core to use
-option(cores = 30)
+options(cores = 30)
 
 #' @param n sample size
 #' @param p the number of dimensions
