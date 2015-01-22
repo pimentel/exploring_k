@@ -523,6 +523,7 @@ grid.arrange(time_plot2(sim_b_time) +
         time_plot2(sim_c_time) + ggtitle("(c) truth: k = 4"),
         time_plot2(sim_d_time) + ggtitle("(d) truth: k = 4"),
         time_plot2(sim_e_time) + ggtitle("(e) truth: k = 2"))
+dev.print(pdf, "~/Dropbox/blog/exploring_k/part2/img/timing.pdf")
 
 ggplot(sim_b_time, aes(method, elapsed, colour = method), colour = method) +
     geom_boxplot() +
